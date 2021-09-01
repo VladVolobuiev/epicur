@@ -1,0 +1,1 @@
+export HeaderAdminHoc from './HeaderAdminHoc'

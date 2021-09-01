@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "main-styles";
+
+.first-pre-benefits-block {
+  //height: 75vh;
+}
+
+.first-pre-benefits-block-85{
+  width: 85vw;
+}
+
+.pre-benefits {
+  color: black;
+  font-family: 'Bebas Neue';
+  font-size: 22px;
+  font-weight: 300;
+  //text-transform: uppercase;
+}
+
+.pre-benefits-2, .pre-benefits-5 {
+  font-weight: bold;
+}
+
+
+.pre-benefits.pre-benefits-4 {
+  font-family: Formular-Medium;
+}
+
+.pre-benefits-6 {
+  font-family: Formular-Regular;
+}
+
+.benefits.benefits-2 {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.pre-benefits-block {
+  display: inline-flex;
+  align-items: center;
+  width: 45%;
+  margin-left: 15px;
+}
+
+.benefits {
+  text-transform: uppercase;
+  color: #727c7e;
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.benefits-block {
+  margin-right: 15px;
+  width: 45%;
+  justify-content: start;
+  align-items: center;
+}
+
+.line {
+  display: inline-flex;
+  margin: 0 10px;
+  position: relative;
+  height: 5px;
+  width: 100%;
+  background-color: $main_color_red;
+}
+
+.line::after {
+  position: absolute;
+  content: "";
+  right: -1px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  background: $main_color_red;
+  border-radius: 100%;
+}
+
+.benefits-1, .benefits-2, .benefits-3, .benefits-5 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+
+}
+
+.benefits-1 {
+  font-size: 45px;
+}
+
+.benefits-2, .benefits-5 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.benefits-3 {
+  font-size: 25px;
+}
+
+.benefits-4, .benefits-6 {
+  font-size: 10px;
+}
+
+.benefits-4, .benefits-5, .benefits-6{
+  width: 30%;
+  display: inline-flex;
+  position: relative;
+}
+
+.benefits-4,
+.benefits-5, .benefits-6
+{
+  justify-content: center;
+}
+
+.benefits-5-center::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 17px;
+  width: 3px;
+  height: 35px;
+  background: #727c7e;
+}
+
+.benefits-5-center::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 17px;
+  width: 3px;
+  height: 35px;
+  background: #727c7e;;
+}
+
+.aside-w-65{
+  height: 65vw;
+}
+.main-w-35{
+  height: 35vw;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// BLOCK 1
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.block1__container{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  font-family: 'Bebas Neue';
+  color: #727c7e;
+}
+.block1__small__container__right{
+  text-align: end;
+}
+.block1__small__container__right{
+  display: flex;
+  margin: 2vh;
+  width: 100%;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+.block1__small__container__left{
+  display: flex;
+  margin: 2vh;
+  width: 100%;
+  text-transform: uppercase;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.block__1__header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Formular-Bold;
+}
+
+.block__1__text {
+  justify-content: end;
+  font-size: 15px;
+  font-family: Formular-Medium;
+}

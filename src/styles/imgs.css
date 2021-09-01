@@ -1,0 +1,21 @@
+.img-block{
+
+    background-repenpmat: no-repeat;
+    background-size: cover;
+/*background-image: url(https://png.pngtree.com/png-clipart/20201209/original/pngtree-lemon-chicken-feet-png-image_5623582.jpg)*/
+
+    /*opacity: 0;*/
+}
+.image-imageblock{
+    /*height: 500px;*/
+}
+.img-child{
+    /*height: 25vw;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../src/img/child1.jpg);
+}
+.outsource-photo{
+    height: 100%;
+    width: 100%;
+}

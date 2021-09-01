@@ -1,0 +1,77 @@
+@import "./src/styles/main-styles";
+
+
+.chebaturochka-logos{
+  //position: absolute;
+  z-index: 5;
+  animation: logo-move 3s ease 2.3s forwards;
+  transition: 3s;
+  //visibility: hidden;
+}
+@keyframes logo-move {
+  50%{
+    left: 0%;
+  }
+  100% {
+    left: -4%;
+  }
+}
+
+.st0{ fill:none;}
+
+.st1{
+  //fill:none;
+  //stroke:$main_color_light_green;
+  stroke:red;
+  animation: webSvgDash1 2.3s ease forwards;
+}
+@keyframes webSvgDash1 {
+  99% {
+    fill:none;
+  }
+  100% {
+    //fill:$main_color_light_green;
+    fill:red;
+  }
+}
+.st2{
+  fill:#FFFFFF;
+}
+
+.st3{
+  fill:none;
+  stroke:#E1001E;
+  animation: webSvgDash3 2.3s ease forwards;
+}
+@keyframes webSvgDash3 {
+  99% {
+    fill:none;
+  }
+  100% {
+    fill:#E1001E;
+  }
+}
+
+.st4{fill:#FF6A00;
+  stroke:#FF6A00;}
+.st5{fill:#572515;
+  stroke:#572515;}
+
+.st1, .st2, .st3, .st4, .st5 {
+  visibility: visible;
+}
+
+.preloader-big-logo{
+height: 100px;
+  width: 100px;
+}
+
+.preloader-small-logo{
+  top:-150px;
+  height: 430px;
+  width: 430px;
+  left: 50px;
+  transform: scale(1);
+  z-index: 70;
+  position: absolute;
+}

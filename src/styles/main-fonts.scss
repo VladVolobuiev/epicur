@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Formular-Regular';
+    src: local('Formular Regular'), local('Formular-Regular'),
+    url('./fonts/Formular.woff2') format('woff2'),
+    url('./fonts/Formular.woff') format('woff'),
+    url('./fonts/Formular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Formular-Bold';
+    src: local('Formular Bold'), local('Formular-Bold'),
+    url('./fonts/Formular-Bold.woff2') format('woff2'),
+    url('./fonts/Formular-Bold.woff') format('woff'),
+    url('./fonts/Formular-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Formular-Light';
+    src: local('Formular Light'), local('Formular-Light'),
+    url('./fonts/Formular-Light.woff2') format('woff2'),
+    url('./fonts/Formular-Light.woff') format('woff'),
+    url('./fonts/Formular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Formular-Medium';
+    src: local('Formular Medium'), local('Formular-Medium'),
+    url('./fonts/Formular-Medium.woff2') format('woff2'),
+    url('./fonts/Formular-Medium.woff') format('woff'),
+    url('./fonts/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas-Neue-normal';
+    src: local('Bebas-Neue-normal'), local('Bebas-Neue-normal'),
+    url('fonts/Bebas Neue-reg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas-Neue-bold';
+    src: local('Bebas-Neue-bold'), local('Bebas-Neue-bold'),
+    url('fonts/Bebas Neue-bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+* {
+    font-family: Formular-Medium;
+}
+
+
+.Formular-Regular{
+    font-family: Formular-Regular;
+}
+.Formular-Bold{
+    font-family: Formular-Bold;
+}
+.Formular-Light{
+    font-family: Formular-Light;
+}
+.Formular-Medium{
+    font-family: Formular-Medium;
+}
+.Bebas-Neue-Bold{
+    font-family: Bebas-Neue-bold;
+}
+.Bebas-Neue-Regular{
+    font-family: Bebas-Neue-normal;
+}

@@ -1,0 +1,35 @@
+@import "main-styles.scss";
+@import "main-fonts.scss";
+$stroke_width: 30;
+
+.header__text__load__container__without__animation{
+  stroke: $main_color_white;
+  fill: $main_color_white;
+  stroke-dashoffset: 0;
+  z-index: 3;
+  top: 0;
+  height: 100%;
+}
+.Logo__header{
+  stroke-width: $stroke_width ;
+  stroke-linejoin: round;
+  stroke: transparent;
+  fill: transparent;
+  stroke-dasharray: 1800%;
+  height: 5vh;
+  animation: 1.5s header__text__load__container 4s linear forwards;
+}
+@keyframes header__text__load__container {
+  0% {
+    stroke: $main_color_white;
+    stroke-dashoffset: 1800%; // 1 / 20 мигание
+  }
+  85% {
+    fill: transparent;
+  }
+  100% {
+    stroke: $main_color_white;
+    fill: $main_color_white;
+    stroke-dashoffset: 0;
+  }
+}

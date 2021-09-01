@@ -1,0 +1,251 @@
+@import "main-styles.scss";
+@import "main-fonts.scss";
+$stroke_width: 30;
+
+.Header__Preloader__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  //z-index: 999;
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+// TEXT PRELOADER
+//////////////////////////////////////////////////////////////////////////////////////////
+.preloader__container2 {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 2.5vw;
+  width: 30vw;
+  //height: 12vh;
+  //height: auto;
+  //padding: 3vw;
+  //width: 80vw;
+  animation: 1s anim_logoEpikur__container2 2500ms ease-out forwards;
+  transition: .1s;
+}
+
+@keyframes anim_logoEpikur__container2 {
+  to {
+    //top: 0;
+    left: -100vw;
+    //padding: 3vw;
+    //height: 12vh;
+    //width: auto;
+  }
+}
+.logoEpikur__path2 {
+  stroke-width: $stroke_width *2;
+  stroke-linejoin: round;
+  stroke: $main_color_light_green;
+  fill: transparent;
+  stroke-dasharray: 1800%;
+  animation: 1500ms logoEpikur__path2 0s linear forwards;
+}
+
+@keyframes logoEpikur__path2 {
+  0% {
+    stroke-dashoffset: 1800%; // 1 / 20 мигание
+  }
+  85% {
+    fill: transparent;
+  }
+  100% {
+    fill: $main_color_light_green;
+    stroke-dashoffset: 0;
+
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+// LAPKA PRELOADER
+//////////////////////////////////////////////////////////////////////////////////////////
+.preloader__container {
+  border-radius: 100%;
+  z-index: 3;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  animation: 1s anim_logoEpikur__container 2500ms linear forwards;
+  transition: .1s;
+}
+@keyframes anim_logoEpikur__container {
+  0%{
+    top: 50%;
+    left: 50%;
+}
+  //50% {
+  //  left: 20px;
+  //  top:50%;
+  //  transform: translate(-10%, -50%) scale(0.7);
+  //}
+  //75% {
+  //  top:-10.5vw;
+  //  left:-10vw;
+  //  transform: scale(0.1);
+  //}
+  //
+  100% {
+    //top: 20vh;
+    left: 200vw;
+    //transform: translate(-0%, -50%);
+    //transform: scale(0.09);
+  }
+}
+.logoEpikur__path1 {
+  stroke-width: $stroke_width*0.75;
+  stroke-linejoin: round;
+  stroke: $main_color_light_green;
+  fill: none;
+  stroke-dasharray: 3500%;
+  animation: 2s anim_logoEpikur__path1 0s linear forwards;
+}
+.logoEpikur__path11{
+  stroke-width: $stroke_width*0.75;
+  stroke-linejoin: round;
+  stroke: $main_color_light_green;
+  fill: none;
+  stroke-dasharray: 3500%;
+  animation: 2s anim_logoEpikur__path1 0s linear forwards;
+}
+@keyframes anim_logoEpikur__path1 {
+  0% {
+    stroke-dashoffset: 3500%;
+  }
+  85% {
+    fill: transparent;
+  }
+  100% {
+    fill: $main_color_light_green;
+    stroke-dashoffset: 0;
+  }
+}
+.second-preloader__container {
+  border-radius: 100%;
+  z-index: 1;
+  background: #ffffff;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 25vw;
+  transition: 1000ms;
+  transform: scale(0.15);
+}
+.hiddenLogo {
+  opacity: 0;
+  visibility: hidden;
+}
+.logoEpikur__path {
+  stroke-width: $stroke_width;
+  stroke-linejoin: round;
+  stroke: $main_color_white;
+  fill: transparent;
+  stroke-dasharray: 1000%;
+  animation: 4s logoEpikur__path 0s linear forwards;
+}
+@keyframes logoEpikur__path {
+  0% {
+    stroke-dashoffset: 1000%;
+  }
+  85% {
+    fill: transparent;
+  }
+  100% {
+    fill: $main_color_white;
+    stroke-dashoffset: 0;
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// media
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 768px) {
+  .preloader__container2{
+  width: 50vw;
+  }
+  .preloader__container{
+    width: 45vw;
+    left: 75%;
+  }
+  @keyframes anim_logoEpikur__container {
+    0%{
+      left: 75%;
+    }
+    100%{
+      left: 200vw;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .header__text__load__container {
+    left: 15vw;
+  }
+  .container-burger-menu {
+    //width: 6vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__text__load__container {
+    left: 10vw;
+  }
+  .container-burger-menu {
+    //width: 70px;
+  }
+  .header__text__load__container {
+    //transform: scale(2);
+  }
+}
+
+@media (max-width: 530px) {
+  .header__text__load__container {
+    left: 5vw;
+    top: -20px;
+    height: 8vh;
+    padding: 2vh;
+  }
+
+  .container-burger-menu {
+    //width: 70px;
+  }
+  .header__text__load__container {
+    //transform: scale(1.5);
+  }
+  .head{
+    height: 6vh;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .header__text__load__container {
+    left: 0;
+  }
+  .header__text__load__container {
+    //transform: scale(1);
+  }
+}
+@media (max-width: 360px) {
+  .header__text__load__container {
+    left: -7vw;
+  }
+  .header__text__load__container {
+    //transform: scale(.8);
+  }
+  .container-burger-menu {
+    //width: 50px;
+  }
+
+}
+
+
+

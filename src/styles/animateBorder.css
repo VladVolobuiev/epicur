@@ -1,0 +1,125 @@
+.container1 {
+    z-index: -2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-right-anim-border:before, .left-right-anim-border:after, .left-anim-border:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 0;
+    background: #079500;
+    animation-name: animation-main-content-before;
+    animation-duration: 2s;
+    /*animation-delay: s;*/
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+.left-right-anim-border:after {
+    right: 0;
+}
+
+.left-right-anim-border:before, .left-anim-border:before {
+    left: 0;
+}
+
+.top-bottom-anim-border:first-child:before, .top-bottom-anim-border:after, .top-anim-border {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #079500;
+    animation-name: animation-horizontal-content-border;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+.left-right-anim-border:after {
+    right: 0;
+}
+
+.left-right-anim-border:before {
+    left: 0;
+}
+
+.top-bottom-anim-border:before {
+    top:0;
+}
+
+.top-bottom-anim-border:after, .top-anim-border:after {
+    bottom:0;
+}
+
+
+@keyframes animation-main-content-before {
+     0% {
+         width: 1px;
+         bottom: 90%;
+     }
+     to {
+         height: 100%;
+         bottom: 0;
+     }
+ }
+
+@keyframes animation-horizontal-content-border {
+     0% {
+         height: 1px;
+         left: 50%;
+     }
+     to {
+         width: 100%;
+         left: 0;
+     }
+ }
+
+.left-menu:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    bottom: 0;
+    background: #000;
+    animation-name: animation-left-menu-after;
+    }
+
+.left-menu:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.row-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@keyframes animation-left-menu-after {
+0% {
+    width: 0;
+    left: 0;
+}
+    to {
+width: 100%;
+        left: 0;
+    }
+}
+
+
+.left-right-anim-border, .top-bottom-anim-border {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}

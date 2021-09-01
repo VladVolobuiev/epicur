@@ -1,0 +1,1 @@
+export {NewsAdminPage} from './NewsAdminPage'
