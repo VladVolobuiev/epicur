@@ -3,20 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import * as firebase from 'firebase';
-// import 'firebase/auth';
-const firebaseConfig = {
-  apiKey: 'AIzaSyDiBs0Qb32oT42PLeEIBuOyyFBoOnY5xPU',
-  authDomain: 'fir-epicur.firebaseapp.com',
-  databaseURL: 'https://fir-epicur-default-rtdb.firebaseio.com',
-  projectId: 'fir-epicur',
-  storageBucket: 'fir-epicur.appspot.com',
-  messagingSenderId: '226954946125',
-  appId: '1:226954946125:web:f0ac0ec5c1116fc4a81e04',
-  measurementId: 'G-ZX8XZFC874',
-};
-firebase.initializeApp(firebaseConfig);
-// const auth = firebase.auth();
+// import firebase from 'firebase';
+
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyDiBs0Qb32oT42PLeEIBuOyyFBoOnY5xPU',
+//   authDomain: 'fir-epicur.firebaseapp.com',
+//   databaseURL: 'https://fir-epicur-default-rtdb.firebaseio.com',
+//   projectId: 'fir-epicur',
+//   storageBucket: 'fir-epicur.appspot.com',
+//   messagingSenderId: '226954946125',
+//   appId: '1:226954946125:web:f0ac0ec5c1116fc4a81e04',
+//   measurementId: 'G-ZX8XZFC874',
+// };
+// firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
