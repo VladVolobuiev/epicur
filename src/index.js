@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as firebase from 'firebase';
+// import 'firebase/auth';
 const firebaseConfig = {
   apiKey: 'AIzaSyDiBs0Qb32oT42PLeEIBuOyyFBoOnY5xPU',
   authDomain: 'fir-epicur.firebaseapp.com',
@@ -15,6 +16,7 @@ const firebaseConfig = {
   measurementId: 'G-ZX8XZFC874',
 };
 firebase.initializeApp(firebaseConfig);
+// const auth = firebase.auth();
 
 ReactDOM.render(
   <React.StrictMode>
